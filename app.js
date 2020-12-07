@@ -15,7 +15,8 @@ todoButton.addEventListener("click",addTodo);
     todoDiv.classList.add("todo");
     // Create li
     const todoLi=document.createElement("li");
-    todoLi.innerText="heey";
+    todoLi.innerText=input.value;
+    
     todoLi.classList.add("todo-item");
     todoDiv.appendChild(todoLi);
    //check mark Button
@@ -30,4 +31,6 @@ todoButton.addEventListener("click",addTodo);
    todoDiv.appendChild(trashButton);
    //append to List
    todoList.appendChild(todoDiv);
+   // clear todo input value
+   input.value=""
  }
